@@ -18,7 +18,7 @@ namespace Lab2.Models
         public int Id { get; set; }
         [Display(Name = "Назва")]
         [Required(ErrorMessage = "Поле не може бути порожнім")]
-        [RegularExpression(@"[А-Я|І|Є]{1}[а-я|i|є|`]+$", ErrorMessage = "Некорректне ім'я")]
+      
         public string Name { get; set; }
        
         public int TypeOfPerformanceId { get; set; }

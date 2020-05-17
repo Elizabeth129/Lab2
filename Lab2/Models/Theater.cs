@@ -19,6 +19,8 @@ namespace Lab2.Models
         public int DirectorId { get; set; }
         [Display(Name = "Адресса")]
         public string Address { get; set; }
+
+        
         [Display(Name = "Дата заснування")]
         [Required(ErrorMessage = "Поле не може бути порожнім")]
         [DataType(DataType.Date)]    

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\2 курс 2 сем\\ІСТП\\Lab2\\Lab2\\Lab2.csproj": {}
+    "D:\\Lab2\\Lab2\\Lab2.csproj": {}
   },
   "projects": {
-    "D:\\2 курс 2 сем\\ІСТП\\Lab2\\Lab2\\Lab2.csproj": {
+    "D:\\Lab2\\Lab2\\Lab2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\2 курс 2 сем\\ІСТП\\Lab2\\Lab2\\Lab2.csproj",
+        "projectUniqueName": "D:\\Lab2\\Lab2\\Lab2.csproj",
         "projectName": "Lab2",
-        "projectPath": "D:\\2 курс 2 сем\\ІСТП\\Lab2\\Lab2\\Lab2.csproj",
+        "projectPath": "D:\\Lab2\\Lab2\\Lab2.csproj",
         "packagesPath": "C:\\Users\\ЛИЗА\\.nuget\\packages\\",
-        "outputPath": "D:\\2 курс 2 сем\\ІСТП\\Lab2\\Lab2\\obj\\",
+        "outputPath": "D:\\Lab2\\Lab2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -44,6 +44,20 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.2, )"
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",

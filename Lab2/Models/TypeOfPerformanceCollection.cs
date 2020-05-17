@@ -13,14 +13,10 @@ namespace Lab2.Models
         {
             Performance = new HashSet<Performance>();
         }
-
         public int Id { get; set; }
         [Display(Name = "Назва типу")]
         [Required(ErrorMessage = "Поле не може бути порожнім")]
-        [RegularExpression(@"[А-Я|І|Є]{1}[а-я|i|є|`]+$", ErrorMessage = "Некорректне ім'я")]
-       
         public string TypeOfPerformanceName { get; set; }
-
         public virtual ICollection<Performance> Performance { get; set; }
     }
 }
