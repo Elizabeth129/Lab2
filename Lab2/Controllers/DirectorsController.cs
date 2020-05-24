@@ -58,10 +58,7 @@ namespace Lab2.Controllers
             var periodTo = new DateTime(2010, 1, 1, 0, 0, 0);
             if ((director.DateOfBirth < periodFrom) || (director.DateOfBirth > periodTo)) return NoContent();
             
-            var a = (from w in _context.Director
-                     where (w.PersonalNumber == director.PersonalNumber)
-                     select w).ToList();
-            if (a.Count() > 0) return NoContent();
+            
 
             try
             {

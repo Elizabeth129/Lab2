@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Informatics-2020-Lab2 Library</title>
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+    <h1>Informatics-2020-Lab2 Library</h1>
+    <h3>Add Category</h3>
+    <form action="javascript:void(0);" method="POST" onsubmit="addCategory()">
+        <input type="text" id="add-name" placeholder="New Performance">
+        <input type="text" id="add-type" placeholder="Type">
+        <input type="text" id="add-theater" placeholder="Theater">
+
+        <input type="submit" value="Add">
+    </form>
+
+    <div id="editForm">
+        <h3>Edit</h3>
+        <form action="javascript:void(0);" onsubmit="updateCategory()">
+            <input type="hidden" id="edit-id">
+            <input type="text" id="edit-name">
+            <input type="text" id="edit-type">
+            <input type="text" id="edit-theater">
+
+            <input type="submit" value="Save">
+            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+        </form>
+    </div>
+
+    <p id="counter"></p>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Theater</th>
+
+        </tr>
+        <tbody id="categories"></tbody>
+    </table>
+
+    <script src="js/lab2.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        getCategories();
+    </script>
+
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Type</th>
+        </tr>
+        <tbody id="types"></tbody>
+    </table>
+    <script type="text/javascript">
+        getTypes();
+    </script>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Theater</th>
+        </tr>
+        <tbody id="theater"></tbody>
+    </table>
+    <script type="text/javascript">
+        getTheaters();
+    </script>
+</body>
+</html>

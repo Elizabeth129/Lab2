@@ -101,7 +101,7 @@ namespace Lab2.Controllers
             _context.Performance.Add(performance);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetPerformance", new { id = performance.Id }, performance);
+            return CreatedAtAction("Get Performance", new { id = performance.Id }, performance);
         }
 
         // DELETE: api/Performances/5
